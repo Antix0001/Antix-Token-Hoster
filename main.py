@@ -15,9 +15,10 @@ config = yaml.safe_load(open("config.yml"))["settings"]
 tkn = os.environ['tkn'] #keep's your token safe
 r = config['status']
 i = config['emoji']
+x = config['emoji_id']
 ######################################
 client = commands.Bot(command_prefix="Antix", self_bot=True)
-payload = {"text": r,"emoji_name": i}
+payload = {"text": r,"emoji_name": i, "emoji_id": int(x)}
 headers = {"Authorization":tkn,"content-type":"application/json"}
 
 @client.event
