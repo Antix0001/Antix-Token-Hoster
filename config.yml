@@ -1,3 +1,4 @@
 settings:
   status: "/terminate /antix"
-  emoji: "💸"
+  emoji: "<nitro-emoji-name>"
+  emoji_id: "<nitro-emoji-id>"
